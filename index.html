@@ -2,8 +2,14 @@
 <html>
 <head>
     <title>Welcome To Cake Shopee</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand&family=Grey+Qo&display=swap" rel="stylesheet">
 <style>
+    .text{
+        font-family: "Grey Qo", cursive;
+        font-size: 40px;
+    }
     .btn{
         background-color: tomato;
         color: white;
@@ -13,12 +19,18 @@
         padding: 1px 10px;
         display: block;
         margin: 5px auto;
+        cursor: pointer;
     }
     .btn:hover {
         background-color: aquamarine;
         color: black;
-        box-shadow: 10px;
+        box-shadow: 0 0 5px 0 #fff;
+        transition: 0.3s;
         text-align: center;
+    }
+    .card:hover{
+        box-shadow: 0 0 5px 0 #fff;
+        transition: 0.3s;
     }
       
     .container{
@@ -30,12 +42,15 @@
         
     }
     .card{
-        border: #f8f8f8;
         border: 1px solid #ddd;
         border-radius: 8px;
         width: 200px;
         padding: 16px;
         text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
         box-shadow: 0 4px 6px red;
     }
     .card img {
@@ -52,7 +67,7 @@ border-radius: 8px;
 </head>
 <body>
     <h1 class="h1">Welcome To Online Shopping website</h1> <hr>
-    <p class="p">Welcome to shopping website we will provide new brands with minimum price. with best quality features</p>
+    <p class="text">Welcome to shopping website we will provide new brands with minimum price. with best quality features</p>
     <div class="container">
         <div class="card">
             <img src="./images/shoesimg.jpg" alt="shoesimg">
